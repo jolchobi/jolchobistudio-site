@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolchobi Studio | Premium Photography & Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0c10;
+        }
+        .blur-nav {
+            backdrop-filter: blur(12px);
+            background-color: rgba(11, 12, 16, 0.8);
+        }
+    </style>
+</head>
+<body class="text-gray-100 selection:bg-amber-500 selection:text-black">
+
+    <header class="fixed top-0 left-0 w-full z-50 blur-nav border-b border-gray-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="text-amber-500"><i class="fa-solid fa-camera-retro"></i></span>
+                JOLCHOBI <span class="text-amber-500 font-light text-xl">STUDIO</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-300">
+                <a href="#home" class="hover:text-amber-500 transition-colors">Home</a>
+                <a href="#gallery" class="hover:text-amber-500 transition-colors">Gallery</a>
+                <a href="#services" class="hover:text-amber-500 transition-colors">Services</a>
+                <a href="#about" class="hover:text-amber-500 transition-colors">About</a>
+                <a href="#contact" class="px-5 py-2.5 bg-amber-500 text-black font-semibold rounded-sm hover:bg-amber-400 transition-colors">Let's Talk</a>
+            </nav>
+
+            <button class="md:hidden text-2xl text-gray-300 focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center opacity-40 scale-105 transition-transform duration-10000" style="background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1920&q=80');"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-20">
+            <div class="space-y-6">
+                <span class="text-amber-500 font-semibold tracking-widest text-xs uppercase bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">Cinematic & Editorial Photography</span>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+                    We Capture <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Stories Frame By Frame</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-md font-light leading-relaxed">
+                    Jolchobi Studio-te amra shudhu chhobi tuli na, protiti frame-e shajiye tuli apnar abeg ebong golpogulo. Editorial lighting ebong professional composition er ek apurbo mishron.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#gallery" class="px-6 py-3.5 bg-amber-500 text-black font-semibold rounded-sm hover:bg-amber-400 transition-all flex items-center gap-2 shadow-lg shadow-amber-500/20">
+                        View Portfolio <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#services" class="px-6 py-3.5 border border-gray-700 hover:border-gray-500 font-semibold rounded-sm transition-all text-gray-300 hover:text-white">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 text-gray-500 animate-bounce">
+            <a href="#gallery" class="flex flex-col items-center text-xs gap-2 tracking-widest uppercase">
+                Scroll Down <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div>
+                <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase">// Our Works</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-white">Selected Portfolio</h2>
+            </div>
+            <div class="flex gap-3 text-sm font-medium text-gray-400">
+                <button class="px-4 py-2 bg-gray-900 border border-amber-500 text-amber-500 rounded-sm">All</button>
+                <button class="px-4 py-2 bg-transparent hover:bg-gray-900 border border-transparent hover:border-gray-800 rounded-sm transition-all">Editorial</button>
+                <button class="px-4 py-2 bg-transparent hover:bg-gray-900 border border-transparent hover:border-gray-800 rounded-sm transition-all">Studio</button>
+                <button class="px-4 py-2 bg-transparent hover:bg-gray-900 border border-transparent hover:border-gray-800 rounded-sm transition-all">Branding</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden bg-gray-900 aspect-[3/4] rounded-sm">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Editorial Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <p class="text-xs text-amber-500 font-semibold tracking-wider uppercase mb-1">Editorial Portrait</p>
+                        <h4 class="text-xl font-bold text-white">Cinematic Lights & Shadows</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden bg-gray-900 aspect-[3/4] rounded-sm">
+                <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?auto=format&fit=crop&w=800&q=80" alt="Commercial Concept" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <p class="text-xs text-amber-500 font-semibold tracking-wider uppercase mb-1">Branding Studio</p>
+                        <h4 class="text-xl font-bold text-white">Minimal Product Composition</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden bg-gray-900 aspect-[3/4] rounded-sm">
+                <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80" alt="Festive Conceptual" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <div>
+                        <p class="text-xs text-amber-500 font-semibold tracking-wider uppercase mb-1">Conceptual Art</p>
+                        <h4 class="text-xl font-bold text-white">Traditional Aesthetics</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-gradient-to-b from-black/0 to-gray-950/40 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase">// What We Do</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 text-white">Our Creative Expertise</h2>
+                <div class="w-12 h-1 bg-amber-500 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-900/40 border border-gray-800 rounded-sm hover:border-amber-500/30 transition-all group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-sm bg-amber-500/10 flex items-center justify-center text-amber-500 text-xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                        <i class="fa-solid fa-camera"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cinematic Photography</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        High-end lighting set-up ebong professional grading-er maddhome editorial-quality visual portrait ready kori.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gray-900/40 border border-gray-800 rounded-sm hover:border-amber-500/30 transition-all group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-sm bg-amber-500/10 flex items-center justify-center text-amber-500 text-xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Brand & Logo Design</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Apnar byabshar visual identity-ke aref-tu effective korte professional, clean ebong eye-catching logo o poster design.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gray-900/40 border border-gray-800 rounded-sm hover:border-amber-500/30 transition-all group hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-sm bg-amber-500/10 flex items-center justify-center text-amber-500 text-xl mb-6 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial Content</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Festive advertisement, digital creative asset ebong symmetric composition diye premium level-er ad design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-6 border-t border-gray-900">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+                <div>
+                    <span class="text-amber-500 text-sm font-semibold tracking-wider uppercase">// Get In Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-white">Let's Create Something Stunning Together</h2>
+                </div>
+                <p class="text-gray-400 leading-relaxed font-light">
+                    Apnar agami prokolpo ba professional photoshoot-er jonno amader sathe joga-jog korun. Jolchobi Studio apnar vision-ke bastob roop dite prostut.
+                </p>
+                
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-amber-500">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">hello@jolchobistudio.com</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center text-amber-500">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="bg-gray-900/20 border border-gray-800 p-8 rounded-sm space-y-5" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Your Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full bg-gray-900 border border-gray-800 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Email Address</label>
+                    <input type="email" placeholder="john@example.com" class="w-full bg-gray-900 border border-gray-800 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Message</label>
+                    <textarea rows="4" placeholder="Tell us about your project..." class="w-full bg-gray-900 border border-gray-800 rounded-sm px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3.5 bg-amber-500 text-black font-semibold text-sm rounded-sm hover:bg-amber-400 transition-all uppercase tracking-wider">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-900 py-8 bg-black">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+            <p>&copy; 2026 Jolchobi Studio. All rights reserved.</p>
+            <div class="flex gap-6 text-lg">
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-amber-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
